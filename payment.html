@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" type="text/css" href="css/select2.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/select2.min.js"></script>
+</head>
+<body>
+
+<header>
+     <div class="top-bar hidden-xs-down">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topNav" aria-controls="topNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="topNav">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link border-right-0" href="#">Sitmap</a>
+                  </li>
+              </ul>
+
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#"><i class="fa fa-search"></i>Search</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fa fa-question-circle"></i>Help</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"> <i class="fa fa-map-marker"></i>Track</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link border-right-0" href="#"> <i class="fa fa-cart-arrow-down"></i>Crat</a>
+                  </li>
+              </ul>
+            
+            </div>
+          </nav>
+          
+     </div>
+    <div class="second-bar">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto text-uppercase">
+            <a class="nav-item nav-link active" href="#">Shipping</a>
+            <a class="nav-item nav-link" href="#">Tracking</a>
+            <a class="nav-item nav-link" href="#">Support</a>
+            <a class="nav-item nav-link text-green" href="#"> <i class="fa fa-user-o" aria-hidden="true"></i> Login</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+
+
+</header>
+
+
+
+<section class="payment">
+   <div class="container">
+      <div class="row">
+          <div class="col-sm-8">
+            <div class="card">
+                <div class="card-header">
+                  Item Invovled
+                  <a href="#" class="btn btn-primary">Add New Item</a>
+                </div>
+                <div class="card-body">
+                    <div class="addItem">
+                        <form>
+                          <div class="form-row">
+                            <div class="col-sm-8">
+                              <select id="pickupPinCode" class="form-control secetToDropdown mb-4" style="width: 100%;">
+                                <option selected>Select Item</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                              </select>
+                            </div>
+                            <div class="col-sm-2">
+                              <input type="text" class="form-control mb-2" placeholder="Value">
+                            </div>
+                            <div class="col-sm-2">
+                              <a href="#" class="btn btn-primary mb-2">x</a>
+                            </div>
+                          </div>
+                        </form>
+                    </div>
+
+                    <div class="card-header">
+                     Booker Details | Sign in to book Faster 
+                     <a href="#" class="btn btn-primary signIn">Sign In</a>
+                    </div>
+
+
+                    <div class="bookerDeatils">
+                      <form>
+                            <div class="form-group row">
+                              <label for="BookerEmail" class="col-sm-2 col-form-label">Email</label>
+                                <div class="col-sm-5">
+                                    <div class="input-group mb-2">
+                                      <div class="input-group-prepend">
+                                        <div class="input-group-text">@</div>
+                                      </div>
+                                      <input type="text" class="form-control" id="BookerEmail" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="col-sm-5">
+                                    <div class="input-group mb-2">
+                                      <div class="input-group-prepend">
+                                        <div class="input-group-text"><i class="fa fa-phone-square" aria-hidden="true"></i></div>
+                                      </div>
+                                      <input type="text" class="form-control" id="BookerMobile" placeholder="Mobile">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group row">
+                              <label for="Address" class="col-sm-2 col-form-label">Address</label>
+                              <div class="col-sm-10">
+                                  <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                      <div class="input-group-text"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                                    </div>
+                                    <input type="text" class="form-control" id="Address" placeholder="Address">
+                                  </div>  
+                              </div>
+                            </div>
+
+                            <div class="form-group row">
+                              <label for="Pincode" class="col-sm-2 col-form-label">Pincode</label>
+                              <div class="col-sm-5">
+                                  <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                      <div class="input-group-text"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                                    </div>
+                                    <input type="text" class="form-control" id="Pincode" placeholder="Pincode">
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class="">
+                            <p>Your Bookind Details will be send to this email address and Mobile number</p>
+                          </div>
+                          <div class="form-check">
+                            <label class="form-check-label">
+                              <input type="checkbox" class="form-check-input" value="">Also send my bookinf Details on Whatsapp
+                            </label>
+                          </div>
+                      </form>
+                    </div>
+                       
+
+                    <div class="card-header addHeader">
+                     To Address (whom to send a package)
+                     </div>
+
+                    <div class="toAddress">
+                        <form>
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="">Name</label>
+                                <input type="text" class="form-control" id="" placeholder="Name">
+                              </div>
+                              <div class="form-group col-md-6">
+                                <label for="">Pincode</label>
+                                <input type="text" class="form-control" id="" placeholder="To Pinkcode">
+                              </div>
+                            </div>
+
+                            <div class="form-group">
+                              <label for="inputAddress">Address</label>
+                              <input type="text" class="form-control" id="inputAddress" placeholder="Address">
+                            </div>
+
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="">Email</label>
+                                <input type="email" class="form-control" id="" placeholder="To Email">
+                              </div>
+                              <div class="form-group col-md-6">
+                                <label for="">Mobile</label>
+                                <input type="text" class="form-control" id="" placeholder="To Mobile">
+                              </div>
+                            </div>
+
+                            <div class="form-check">
+                              <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" value="">Yes, Add Parcel Protection to my Order
+                              </label>
+                            </div>
+
+                            <div class="form-check">
+                              <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" value="">Yes, Accept terms & Conditions
+                              </label>
+                            </div>
+                          
+                        </form>
+                    </div>
+
+                     <div class="text-center mt-4">
+                      <a href="#" class="btn btn-primary proceed">Proceed To payment</a>
+                     </div>
+                 
+                </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+               <div class="BreakDown">
+                <div class="card">
+                  <div class="card-header">
+                    Breakdown
+                  </div>
+                  <div class="card-body">
+                    <p>No. of Days <b>10 to 15 Days</b></p>
+                    <h6>Base Price</h6>
+                    <p>Including Tax:56756</p>
+                  </div>
+                  <div class="card-footer">
+                    Total 8709890
+                  </div>
+                </div>
+               </div>
+          </div>
+      </div>
+   </div>
+</section>
+
+
+
+
+
+
+<section class="contact">
+  <div class="container">
+      <div class="row">
+         <div class="col-lg-4 col-md-4 col-sm-4">
+           <div class="contactDetail mb-4 mt-4">
+              <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+              <div class="detail"> <p>7878785865688</p></div>
+           </div>
+         </div>
+         <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="contactDetail mb-4 mt-4">
+             <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+             <div class="detail"> <p>info@company.com</p></div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="contactDetail mb-4 mt-4">
+             <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+             <div class="detail pt"> <p>Block no.12 Andheri, Mumbai- 340045</p></div>
+          </div>
+        </div>
+      </div>
+
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+        <div class="footer-logo"><img src="images/logo.png" class="img-fluid"></div>
+      </div>
+       <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <ul class="text-uppercase">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About US</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Sitemap</a></li>
+            </ul>
+       </div>
+       <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+          <ul class="text-uppercase">
+              <li><a href="#">Shipping</a></li>
+              <li><a href="#">Tracking</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+           <div class="socialMedia text-center">
+              <h5 class="text-uppercase text-white text-center">FOLLOW US ON </h5>
+               <a href="" class="mr-1"><img src="images/facebook.png" class="img-fluid"></a>
+               <a href="" class="mr-1"><img src="images/twitter.png" class="img-fluid"></a>
+               <a href="" class="mr-1"><img src="images/linkedin.png" class="img-fluid"></a>
+           </div>
+        </div>
+
+
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script>
+   $(document).ready(function () {
+    $(".secetToDropdown").select2(); 
+$('.owl-two').owlCarousel({
+    loop: true,
+    margin: 30,
+    nav: true,
+    autoplay: false,
+    /*autoplayTimeout:3000,*/
+    smartSpeed: 700,
+    /*animateOut: 'fadeOut',*/
+    /*autoplayHoverPause:true,*/
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 1
+        },
+        992: {
+            items: 1
+        },
+        1200: {
+            items: 1  
+        }
+    }
+});
+
+
+
+});
+  </script>
+
+  
+</body>
+</html>
